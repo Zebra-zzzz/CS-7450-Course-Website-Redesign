@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+}
+
+#header {
+    background-color: #CFE4D6;
+}
+
+#heat-map {
+    margin: 27px 84px 33px 84px;
+    display:inline-block;
+}
+rect {
+    fill: #EA8948;
+}
+
+rect.low {
+    opacity: 0.3;
+}
+
+rect.mid {
+    opacity: 0.75;
+}
+
+rect.high {
+    opacity: 1;
+}
+
+#header-title {
+    margin:24px 10px 27px 10px;
+    display:inline-block;
+}
+
+#course-number {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    color: #EA8948;
+    font-weight: 700;
+    /* margin: 0 0 -3px 0; */
+}
+
+#course-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 56px;
+    color: #0A7DE8;
+    font-weight: 700;
+    /* margin: 0; */
+}
+
+#navbar {
+    background-color: #ffffff;
+    margin: 12px auto 12px 94px;
+}
+
+h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tab {
+    display: inline-block;
+    color: #222222;
+    margin: 0 24px 0 0;
+}
+.tab.active {
+    font-family: 'DM Sans', sans-serif;
+    color: #EA8948;
+    font-weight: 700;
+}
+
+.mainpage {
+    background-color: #F3EDDF;
+    padding-left: 94px;
+    padding-top: 47px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    color: #EA8948;
+    font-weight: 700;
+    margin: auto auto 31px auto;
+}
+
+#homepage-title {
+    margin: auto auto 15px auto;
+}
+
+.section1 {
+    display: inline-block;
+    /* width: 683px; */
+}
+
+.section2{
+    display: inline-block;
+    width: auto;
+    /* margin-left: 77px;
+    margin-top: 15px; */
+    margin: 20px 30px auto 77px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex_child {
+    flex: 1;
+}
+
+.felx-child:first-child {
+    margin-right: 77px;
+}
+
+.para {
+    margin: auto auto 46px 2px;
+    width: 683px;
+}
+
+.text {
+    /* display: inline-block; */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #222222;
+    font-weight: 400;
+    margin: 16px auto auto auto;
+}
+
+.highlight {
+    /* display: inline-block; */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #0A7DE8;
+    font-weight: 500;
+}
+
+.section .title {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #EA8948;
+    padding: 4px 8px 4px 8px;
+    width: auto;
+}
+
+.title h4 {
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.section2 h4 {
+    margin: 0 0 5px 0;    
+}
+
+#instructor {
+    font-weight: 700;
+    color: #EA8948;
+}
+
+#name {
+    font-weight: 500;
+    color: #0A7DE8;
+}
+
+
+/* Grades */
+#grades {
+    margin-bottom: 0;
+}
+
+/* table */
+h5 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: #737373;
+    font-weight: 400;
+    margin: 24px 0 0 0;
+}
+
+th h5 {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+td .text {
+    margin: 0 16px 0 0px;
+}
+
+#component {
+    color:#EA8948;
+}
+
+#weight {
+    color: #0A7DE8;
+}
+
+
+.assignment-tab {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.assignment-tab h5{
+    /* display: inline-block; */
+    margin: 24px 24px 0 0;
+    color: #737373;
+}
+
+.active h5{
+    color:#EA8948;
+    font-weight: 500;
+}
+
+.text.m5 {
+    margin: 5px auto auto auto;
+}
+
+.underscore {
+    margin-bottom: -4px;
+}
+
+li .text {
+    margin-top: 0;
+}
+
+#textbook h5{
+    color:#EA8948;
+    font-weight: 500;
+    margin-top: -22px;
+}
+
+
+/* Paper */
+.reading h4 {
+    color: #0A7DE8;
+    margin: 16px auto 5px auto;
+}
+
+ul.paper {
+    margin:0 auto 0 auto;
+}
+
+.text.paper {
+    margin:0;
+}
+
+svg.line {
+    margin: 44px auto 28px auto;
+}
+
+.para.paper {
+    margin: 0 0;
+}
+
+h4.highlight {
+    color: #0A7DE8;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.info.section2 {
+    margin-top:0;
+}
+
+.flex-container.info {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 7450 Info Viz</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="assignment.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="heat-map">
+            <svg width="220" height="100">
+                <rect class="mid" x="20" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="60" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="80" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="100" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="120" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="180" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="200" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="0" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="20" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="40" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="60" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="80" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="120" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="140" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="160" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="180" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="0" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="40" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="60" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="80" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="100" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="120" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="160" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="200" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="20" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="40" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="60" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="100" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="120" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="140" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="160" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="180" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="200" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="0" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="20" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="60" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="80" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="100" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="140" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="160" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="180" y="80" rx="2" ry="2" width="18" height="18" />
+            </svg>
+        </div>
+        <div id="header-title">
+            <svg width="680" height="120">
+                <text id="course-number" x="0" y="45" fill="#EA8948">CS 7450</text>
+                <text id="course-name" x="0" y="110" fill="#0A7DE8">Information Visualization</text>
+            </svg>
+            <!-- <h3 id="course-number">CS 7450</h3>
+            <h1 id="course-name">Information Visualization</h1> -->
+        </div>
+    </div>
+
+    <div id="navbar">
+        <a href="index.html"><h4 class="tab active">Home</h4></a>
+        <a href="couse_info.html"><h4 class="tab">Course Info</h4></a>
+        <a href="schedule.html"><h4 class="tab">Schedule</h4></a>
+        <a href="instructor.html"><h4 class="tab">Instructor</h4></a>
+        <a href="ta.html"><h4 class="tab">TA</h4></a>  
+    </div>
+
+    <div class="mainpage">
+        <h1 id="homepage-title">CS 7450 - Information Visualization</h1>
+        <div id="homepage-main" class="flex-container">
+            <div class="section1 flex-child">
+                <div class="para">
+                    <p class="text">
+                        Computer-based <span class="highlight">information visualization</span> centers around helping people explore or explain data through interactive software that exploits the capabilities of the human perceptual system. A key challenge in information visualization is designing <span class="highlight">a cognitively useful spatial mapping of a dataset</span> that is not inherently spatial and accompanying <span class="highlight">the mapping by interaction techniques</span> that allow people to intuitively explore the dataset. Information visualization draws on the intellectual history of several traditions, including computer graphics, human-computer interaction, cognitive psychology, semiotics, graphic design, statistical graphics, cartography, and art. The synthesis of relevant ideas from these fields with new methodologies and techniques made possible by interactive computation are critical for helping people keep pace with the torrents of data confronting them.
+                    </p>
+                    <p class="text">
+                        This course is an <span class="highlight">advanced</span> information visualization course <span class="highlight">focusing on research</span> within this domain. Students should already have a good working knowledge of data visualization along the lines of what one would get from taking CS 4460 or CS 6730 at Georgia Tech. This course (CS 7450) is not intended to be a student's first exposure to the data visualization area.
+                    </p>
+                </div>
+                
+                <div class="section">
+                    <div class="title"><h4>Course Format</h4></div>
+                    <div class="para">
+                        <p class="text">
+                            The course will follow a general lecture/seminar style. For one day per week, we will focus on visualization research. We will read research papers on some topic/theme, students will make presentations about the papers, and we will discuss. One goal is to try to develop ideas for new research projects. On the other day per week, we will focus on visualization system/application development. Students will learn how to develop interactive visualization tools using languages and libraries like d3 and javascript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section2 flex-child">
+                <img src="./images/course_image.png" width="352px" style="margin-bottom:20px">
+                <h4 id="instructor">Instructor:<span id="name">John Stasko</span></h4>
+                <h4>Spring 2023</h4>
+                <h4>Tue, Thu 2:00 - 3:15 pm</h4>
+                <h4>Instructional Center room 109</h4>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<!-- <script src="assignment.js"></script> -->
+</html>

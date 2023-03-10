@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 7450 Info Viz</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="assignment.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="heat-map">
+            <svg width="220" height="100">
+                <rect class="mid" x="20" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="60" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="80" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="100" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="120" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="180" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="200" y="0" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="0" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="20" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="40" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="60" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="80" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="120" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="140" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="160" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="180" y="20" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="0" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="40" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="60" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="80" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="100" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="120" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="160" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="200" y="40" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="20" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="40" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="60" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="100" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="120" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="140" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="160" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="180" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="200" y="60" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="0" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="20" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="60" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="80" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="100" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="low" x="140" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="mid" x="160" y="80" rx="2" ry="2" width="18" height="18" />
+                <rect class="high" x="180" y="80" rx="2" ry="2" width="18" height="18" />
+            </svg>
+        </div>
+        <div id="header-title">
+            <svg width="680" height="120">
+                <text id="course-number" x="0" y="45" fill="#EA8948">CS 7450</text>
+                <text id="course-name" x="0" y="110" fill="#0A7DE8">Information Visualization</text>
+            </svg>
+            <!-- <h3 id="course-number">CS 7450</h3>
+            <h1 id="course-name">Information Visualization</h1> -->
+        </div>
+    </div>
+
+    <div id="navbar">
+        <a href="index.html"><h4 class="tab">Home</h4></a>
+        <a href="couse_info.html"><h4 class="tab active">Course Info</h4></a>
+        <a href="schedule.html"><h4 class="tab">Schedule</h4></a>
+        <a href="instructor.html"><h4 class="tab">Instructor</h4></a>
+        <a href="ta.html"><h4 class="tab">TA</h4></a>                
+    </div>
+
+    <div class="mainpage">
+        <h1>Course Information</h1>
+        <div class="section">
+            <div class="title"><h4>Overview</h4></div>
+            <div class="para">
+                <p class="text">
+                    The course will follow a general lecture/seminar style. For one day per week (Tuesdays), we will focus on visualization research. We will read research papers on some topic/theme, students will make presentations about the papers, and we will discuss. One goal is to try to develop ideas for new research projects. On the other day per week (Thursdays), we will focus on visualization system/application development. Students will learn how to develop interactive visualization tools using languages and libraries like Vega-Lite, D3, and JavaScript.
+                </p>
+            </div>
+
+            <div class="title"><h4>Grades and Assignments</h4></div>
+            <br>
+            <div class="section1">
+                <div class="para"  id="grades">
+                    <p class="text">
+                        Grades will be determined by a combination of assignments and measures as shown below.
+                    </p>
+                </div>                
+
+                <table>
+                    <tr>
+                        <th><h5 id="component">Component</h5></th>
+                        <th><h5 id="weight">Weight</h5></th>
+                    </tr>
+                    <tr>
+                        <td><p class="text">Paper presentation</p></td>
+                        <td><p class="text">15%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="text">Paper summarization</p></td>
+                        <td><p class="text">15%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="text">Research proposal</p></td>
+                        <td><p class="text">20%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="text">Class engagement</p></td>
+                        <td><p class="text">10%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="text">Programming HWs</p></td>
+                        <td><p class="text">40%</p></td>
+                    </tr>
+                </table>
+
+                <div class="assignment-bar">
+                    <div class="assignment-tab active" component="c1"><h5>Paper presentation</h5></div>
+                    <div class="assignment-tab" component="c2"><h5>Paper summarization</h5></div>
+                    <div class="assignment-tab" component="c3"><h5>Research proposal</h5></div>
+                    <div class="assignment-tab" component="c4"><h5>Class engagement</h5></div>
+                    <div class="assignment-tab" component="c5"><h5>Programming HWs</h5></div>
+                </div>
+                <div id="c1">
+                    <img class="underscore" src="./images/section1.png">
+                    <div class="para">
+                        <p class="text">
+                            Once during the term, each student will make a 10-minute summary presentation about one of our selected research papers. Presentations should follow a style and outline as discussed in class.
+                        </p>
+                    </div>                    
+                </div>
+                <div id="c2">
+                    <img class="underscore" src="./images/section2.png">
+                    <div class="para">
+                        <p class="text">
+                            Once during the term, each student will write a 2-3 page (single spaced, single column) review article summarizing a paper to be presented that week. These summaries are due Monday night at 8pm. Students should end each summary with a research discussion question for that week's topic.
+                        </p>
+                    </div>                    
+                </div> 
+                <div id="c3">
+                    <img class="underscore" src="./images/section3.png">
+                    <div class="para">
+                        <p class="text">
+                            At the end of the term, each student will submit a ~3 page proposal on a research topic that they would (potentially) like to conduct in the future. The proposal can be on any of the topics that we discussed during the term. Think of this as a proposal for an independent study, directed research project that you might do with a faculty member.
+                        </p>
+                    </div>                    
+                </div>
+                <div id="c4">
+                    <img class="underscore" src="./images/section4.png">
+                    <div class="para">
+                        <p class="text">
+                            Once during the term, each student will write a 2-3 page (single spaced, single column) review article summarizing a paper to be presented that week. These summaries are due Monday night at 8pm. Students should end each summary with a research discussion question for that week's topic.
+                        </p>
+                        <p class="text">
+                            <span class="highlight">Important Note</span>: If you are sick, please do <span class="highlight">not</span> come to class. Covid is still quite rampant in society, and we do not need to be spreading the disease through our class. If you have the slightest inclination that you may be positive, please do not come to class. Here is the <a href="https://health.gatech.edu/coronavirus"><span class="highlight">campus info about Covid</span></a> from Stamps Health Services.
+                        </p>
+                    </div>                    
+                </div>
+                <div id="c5">
+                    <img class="underscore" src="./images/section5.png">
+                    <ul>
+                        <li><p class="text">HW 1 - Vega-Lite</p></li>
+                        <li><p class="text">HW 2 - Web Technologies</p></li>
+                        <li><p class="text">HW 3</p></li>
+                        <li><p class="text">HW 4</p></li>
+                        <li><p class="text">HW 5</p></li>
+                    </ul>
+                    <div class="para">
+                        <p class="text">
+                            Each HW will be graded out of 10 points. For each 24 hours late, 10% of the total grade (i.e., one point) will be deducted from an assignment's score. A HW can be turned in up to a week late unless otherwise notified. All the HW assignment details can be found in Canvas.
+                        </p>
+                    </div>                    
+                </div>                      
+                                
+                <div id="textbook">
+                    <h5 id="textbook1">Textbook</h5>
+                </div>
+                <div class="para">
+                    <p class="text">
+                        We will not use a specific textbook but will have weekly readings of papers from the visualization research community. Scott Murray's book <a href="http://alignedleft.com/work/d3-book-2e"><span class="highlight">Interactive Data Visualization for the Web, 2nd edition</span></a>a may be helpful for the visualization system development. (More to come on that later.)
+                    </p>
+                </div>
+            </div>
+
+            <br>
+            <div class="title"><h4>Academic Integrity</h4></div>
+            <div class="para">
+                <p class="text">
+                    Georgia Tech aims to cultivate a community based on trust, academic integrity, and honor. Students are expected to act according to the highest ethical standards. For information on Georgia Tech's Academic Honor Code, please visit <a href="http://www.catalog.gatech.edu/policies/honor-code/"><span class="highlight">http://www.catalog.gatech.edu/policies/honor-code/</span></a>. Unless otherwise noted, all work should be strictly your own. Any student suspected of cheating or plagiarizing on an assignment will be reported to the Office of Student Integrity, who will investigate the incident and identify the appropriate penalty for violations. If you have any questions about these policies, just ask your instructor.
+The HW programming exercises are opportunities for each student to learn web-based visualization application development. Thus, what you submit for these assignments should be your own work, and they should be code that you have written. We do expect that you understand and can explain the homework solution that you submit.
+                </p>
+                <p class="text">
+                    Students should be aware of the approved sources of assistance, help, and collaboration in our course. You can definitely use resources provided for everyone, including the instructor and teaching assistants. In particular, you should take advantage of our TA helpdesk/office hours to get personalized assistance on HW assignments. It also is permissible, and actually recommended, that you post questions about course concepts and HW assignments to Ed Discussion. Please refrain from posting code in public (readable by all) messages there, however. If you post code, make it a private message to the instructor and TAs.
+                </p>
+                <p class="text">
+                    We also seek to create a culture where you can interact with and learn from other students in class as well. Interaction between students at a <span class="highlight">conceptual, high-level</span> is permitted. You can discuss course concepts and HW assignments broadly, that is, at a conceptual level to increase your understanding. If you find yourself dropping to a level where specific code is being discussed for a HW, that is going too far. Those discussions should be reserved for the instructor and TAs.
+                </p>
+                <p class="text">
+                    In addition to what is allowable, it is important for you to understand what is not permitted in our class. Sharing code, either an entire program or even just a portion of a program, between students is not allowed. Taking/Receiving assignments from other classmates, being given a homework solution, or downloading completed assignments from websites are considered plagiarism and are not allowed. These are activities that are simply meant to earn a score, not understand our course material. Similarly, you should not give (email, IM, etc) or even show a copy of your code, or a portion of your code to another student. In this course, giving code is considered just as bad as receiving code, so you must not succumb to other student's requests to see your program(s). If you are caught doing any of the prohibited activities above, you will be dealt with according to the GT Academic Honor Code and the incident will be submitted to the Office of Student Integrity.
+                </p>
+            </div>
+
+            <div class="title"><h4>Excused Absences</h4></div>
+            <div class="para">
+                <p class="text">
+                    From time to time, circumstances such as an excused school absence (athletics, competition, conference, etc.), an illness/sickness, a family emergency, or other such circumstances may prevent a student from completing an assignment or assigned work. In the event of one of these circumstances, the student is responsible for contacting the Office of the Vice President and Dean of Students as soon as possible to report the issue, conflict, or emergency, providing dated documentation and requesting assistance in notifying their instructors. (See <a href="http://www.catalog.gatech.edu/rules/4/"><span class="highlight">http://www.catalog.gatech.edu/rules/4/</span></a>). You should <span class="highlight">NOT</span> go to your instructor first with such documentation. Instead, documentation such as medical forms will be handled confidentially within the Office of the Vice President and Dean of Students and their office will inform a decision as to whether communication with instructional faculty is appropriate.
+                </p>
+                <p class="text">
+                    If this can all be done beforehand then you should get written confirmation of the approved absence from the Registrar's office and notify the instructor prior to the day(s) of the absence. Clearly, some circumstances such as medical emergencies do not allow for that, so they can be handled after the fact.
+                </p>
+            </div>
+
+            <div class="title"><h4>Accommodations for Students with Disabilities</h4></div>
+            <div class="para">
+                <p class="text">
+                    If you are a student with learning needs that require special accommodation, contact the Office of Disability Services at (404) 894-2563 or <a href="http://disabilityservices.gatech.edu/"><span class="highlight">http://disabilityservices.gatech.edu/</span></a>, as soon as possible, to make an appointment to discuss your special needs and to obtain an accommodations letter. Please also e-mail me as soon as possible in order to set up a time to discuss your learning needs.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="assignment.js"></script>
+
+</html>
